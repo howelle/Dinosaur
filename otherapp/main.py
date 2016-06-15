@@ -42,7 +42,6 @@ def clean_database():
         return render_template('400.html', err_msg=err_msg),400
 
 
-
 # Common Side
 # common homepage(temporary)
 @app.route('/')

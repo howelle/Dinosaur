@@ -33,7 +33,20 @@ class DateTimeMixin(object):
 # Table to hold information about dinosaurs
 # Takes in the database object (???)
 class Dinosaur(Base):
+    # Class using a declarative needs at least a __tablename__ and a primary
+    # key
     __tablename__ = 'Dinosaur'
-    name = 
-    scientific_name =
-    period = Column(Enum('Triassic', 'Jurassic', 'Cretaceous', name=TimePeriod)
+    name = Column(String(128), nullable=False)
+    scientific_name = Column(String(128), nullable=False, unique=True,
+                             primary_key=True)
+    # Enum type requires a name
+    period = Column(Enum('Triassic', 'Jurassic', 'Cretaceous',
+                         name='TimePeriod'))
+
+    def __repr__(self):
+        # Format string representation of the table ????
+        info = 'Dinosaurs<name: {one}, scientific_name: {two} period {three}>'
+        formatted = info.format(one=self.name, two=self.scientific_name,
+                                three=self.period)
+
+        return formatted
