@@ -18,23 +18,26 @@
 
 {% block head %}
 		<meta charset="UTF-8"> 
-		<title>Dinoland</title>
+		<title>Dinomight!</title>
 {% endblock %}
 </head>
 
 <body>
 <nav>
 	<section id="container">
-		<li><button onclick="myFunction()" class="dropbtn"><h1>Dinosaurs<h1></button>
-		<div id="myDropdown" class="dropdown-content">
+		<li><button onmouseover="dinoFunction()" class="dropbtn"><h1>Dinosaurs</h1></button>
+		<div id="Dinosaurs" class="dropdown-content">
 			<a>Dinos!</a>
 			<a>Dinosaurs!</a>
-			<a>Not Dinosaurs!</a>
 			</div>
 		</li>
-		<li>Jurassic</li>
-		<li>Triassic</li>
-		<li>Cretaceous</li>
+		<li><button onmouseover="timeFunction()" class="dropbtn"><h2>Time Period</h2></button>
+			<div id="Timeperiod" class="dropdown-content">
+				<a>Triassic</a>
+				<a>Jurassic</a>
+				<a>Cretaceous</a>
+			</div>
+		</li>
 	</section>
 </nav>
 
