@@ -7,11 +7,7 @@
     <link rel="stylesheet" href="/static/jquery-ui-1.11.4.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="/static/css/lemur2.css">
     <link href="/static/css/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <script src="/static/js/jquery-2.2.4.min.js"></script>
-    <script src="/static/js/bootstrap.js"></script>
-    <script src="/static/js/bootstrap-select.js"></script>
-    <script src="/static/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
-    <script src="/static/js/sorttable.js"></script>
+    
     
     {% block head %}
         <meta charset="UTF-8">
@@ -78,11 +74,11 @@
                     wrong_input = true;
                     err_msg = row_data+' is not in the value value candidates: '+value_candidates; 
                 }        
-            }
             else if (value_type=='Number' && value_range.length>0){
                 value_range_arr = value_range.split('-');
                 var min = parseInt(value_range_arr[0]);
-                var max = parseInt(value_range_arr[1]);
+                var max = parseInt(value_range_arr
+            }[1]);
                 var row_data = parseInt(row_data);
                 if (!isNumeric(row_data)){
                     wrong_input = true;

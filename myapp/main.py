@@ -13,7 +13,6 @@ import db
 import schema
 # import module for python abstract syntax trees which allows code modification
 # before compiling (useful for adaptive code)
-import ast
 
 # Initialize the application with flask and set debug
 app = Flask(__name__)

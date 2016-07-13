@@ -12,7 +12,7 @@ from sqlalchemy import (Column, Integer, String, DateTime, ForeignKey, Enum)
 # import declarative base (to use database as code object)
 from sqlalchemy.ext.declarative import declarative_base
 # import object relational mapper relationship module to link tables
-from sqalchemy.orm import relationship
+from sqlalchemy.orm import relationship
 
 # Declarative base allows the use of an object to represent the tables, mapper
 # and classes of the database
