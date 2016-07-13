@@ -64,7 +64,7 @@ nav {
 	background-color: #000000;
 	color: #FFFFFF;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	padding:0.75%;
+	padding:10px;
 	padding-left:1.333333333%;
 }
 
@@ -72,19 +72,19 @@ nav {
 
 h1 {
 	font-family:Garamond;
-	display: inline;
+	display: inline-block;
 	font-size: 200%;
 
 }
 
 h2 {
 	font-family:Garamond;
-	display: inline;
+	display: inline-block;
 	font-size: 125%;
 
 }
 /* Dropdown button */
-.dropbtn {
+.dropbtn, .dropbtn2, .dropbtn3 {
 	cursor: pointer;
 	border: none;
 	color: white;
@@ -94,12 +94,14 @@ h2 {
 }
 
 /* Dropdown link when hovering */
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus, .dropbtn2:hover, .dropbtn2:focus,.dropbtn3:hover, .dropbtn3:focus {
 	background-color: #262626;
+	display: inline-block;
+
 }
 
 /* Dropdown container */
-.dropdown {
+.dropdown, .dropdown2, .dropdown3 {
 	position: relative;
 	display: inline-block;
 }
@@ -113,8 +115,23 @@ h2 {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+.dropdown-content2 {
+	display:none;
+	position:absolute;
+	background-color: #000000;
+	min-width:8.5%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content3 {
+	display:none;
+	position:absolute;
+	background-color: #000000;
+	min-width:7%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a, .dropdown-content2 a, .dropdown-content3 a {
     color: white;
     padding: 12px 8px;
     text-decoration: none;
@@ -127,6 +144,38 @@ h2 {
 
 /* Other navbar links */
 nav li {
-	display: inline;
+	display: inline-block;
 	padding-right: 30px;
 }
+
+
+.age {
+	background-color: white;
+	color: black;
+	margin-top:5.7%;
+	margin-right:10%; 
+	margin-left:10%;
+	margin-bottom: 100px;
+	padding: 5px;
+	box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    padding: 20px; 
+}
+}
+
+.jurassic {
+	padding:0;
+	display: inline-block;
+	background-color: black;
+}
+.cretaceous {
+	padding:0;
+	display: inline-block;
+	background-color: black;
+}
+
+
+
+
+
+

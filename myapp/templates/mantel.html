@@ -26,21 +26,30 @@
 <nav>
 	<section id="container">
 		<li><button onmouseover="dinoFunction()" class="dropbtn"><h1>Dinosaurs</h1></button>
-		<div id="Dinosaurs" class="dropdown-content">
+		<div id="Dinosaurs" class="dropdown-content" class="toggleable">
 			<a>Dinos!</a>
 			<a>Dinosaurs!</a>
 			</div>
 		</li>
-		<li><button onmouseover="timeFunction()" class="dropbtn"><h2>Time Period</h2></button>
-			<div id="Timeperiod" class="dropdown-content">
+		<li><button onmouseover="timeFunction()" class="dropbtn2"><h2>Time Period</h2></button>
+			<div id="Timeperiod" class="dropdown-content2" class="toggleable">
 				<a>Triassic</a>
 				<a>Jurassic</a>
 				<a>Cretaceous</a>
 			</div>
 		</li>
+		<li><button onmouseover="placeFunction()" class="dropbtn3"><h2>Place</h2></button>
+			<div id="Place" class="dropdown-content3" class="toggleable">
+				<a><em>Pangea</em></a>
+				<a>other</a>
+			</div>
+		</li>
 	</section>
 </nav>
+	
+	<div class="age">
 
+	</div>
 
 <div id="content">
 {% block content %} {% endblock %}
