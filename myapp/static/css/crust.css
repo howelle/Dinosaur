@@ -55,7 +55,6 @@ body {
 	background: -o-linear-gradient(right, #88D7A8 , #2FAEB5); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(right, #88D7A8 , #2FAEB5); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to right, #88D7A8 , #2FAEB5); /* Standard syntax */
-	font-family:Palatino Linotype;
 }
 
 
@@ -148,10 +147,13 @@ nav li {
 	padding-right: 30px;
 }
 
+.age{
+}
 
-.age {
-	background-color: white;
+.age1 {
+	background-color: black;
 	color: black;
+	width:22%;
 	margin-top:5.7%;
 	margin-right:10%; 
 	margin-left:10%;
@@ -160,21 +162,109 @@ nav li {
 	box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.2);
     border-radius: 25px;
     padding: 20px; 
+    position:relative;
 }
+.age2{
+	background-color: black;
+	color: black;
+	width:22%;
+	margin-top:5.7%;
+	margin-right:30%; 
+	margin-left:10%;
+	margin-bottom: 100px;
+	padding: 5px;
+	box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    padding: 20px; 
+    position:relative;
+}
+.age3 {
+	background-color: black;
+	color: black;
+	width:22%;
+	margin-top:5.7%;
+	margin-right:70%; 
+	margin-left:10%;
+	margin-bottom: 100px;
+	padding: 5px;
+	box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    padding: 20px; 
+    position:relative;
+}
+
+.triassic {
+	color: white;
+	width: 100%;
+	text-align: center;
+	margin-top:-1.73%;
+	margin-right:0%; 
+	margin-left:-1.65%;
+	margin-bottom: 100px;
+	padding: 10px;
+    border-radius: 25px;
+	position:absolute;
+	border-radius: 25px;
+	display: inline-block;
+	background: #7C5896; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #7C5896 , #B43C79); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #7C5896 , #B43C79); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #7C5896 , #B43C79); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #7C5896 , #B43C79); /* Standard syntax */
 }
 
 .jurassic {
+	color: white;
+	width:33%;
+	text-align: center;
+	margin-left:22%;
+	margin-top:-1.73%;
+	padding: 10px;
+    border-radius: 25px;
+	position:absolute;
+	border-radius: 25px;
+	display: inline-block;
+	background: #B43C79; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #B43C79, #FAB26A); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #B43C79, #FAB26A); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #B43C79, #FAB26A); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #B43C79, #FAB26A); /* Standard syntax */
+
+}
+.cretaceous {
+	color: white;
+	width:42%;
+	text-align: center;
+	margin-left: 56%;
+	margin-top:-1.73%;
+	padding: 10px;
+    border-radius: 25px;
+	position:absolute;
+	border-radius: 25px;
+	display: inline-block;
+	background-color: blue;
+	background: #FAB26A; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #FAB26A ,#7C5896); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #FAB26A ,#7C5896); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #FAB26A ,#7C5896); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #FAB26A ,#7C5896); /* Standard syntax */
+
+}
+/*
+.jurassic {
+	position:absolute;
 	padding:0;
 	display: inline-block;
 	background-color: black;
 }
 .cretaceous {
+	position: absolute;
 	padding:0;
 	display: inline-block;
 	background-color: black;
 }
 
-
+*/
 
 
 
