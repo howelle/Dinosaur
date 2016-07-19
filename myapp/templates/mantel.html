@@ -2,65 +2,63 @@
 <html lang="en">
 <head>
 	<!-- link the css stylesheet -->
-	<link rel="stylesheet" href="static/css/crust.css">
+
 	<!-- some stylesheets from bootstrap and jquery-->
     <link rel="stylesheet" href="/static/css/bootstrap.css">
     <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/static/css/bootstrap-select.css">
     <link rel="stylesheet" href="/static/jquery-ui-1.11.4.custom/jquery-ui.min.css">
     <link href="/static/css/font-awesome/css/font-awesome.css" rel="stylesheet" />
-	<script src="/static/js/crust.js"></script>
+	<link rel="stylesheet" href="static/css/crust.css">
+	<link rel="stylesheet" href="static/css/Lobster/Lobsert_1.3.otf" />
 	<script src="/static/js/jquery-2.2.4.min.js"></script>
     <script src="/static/js/bootstrap.js"></script>
     <script src="/static/js/bootstrap-select.js"></script>
     <script src="/static/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
     <script src="/static/js/sorttable.js"></script>
+	<script src="/static/js/crust.js"></script>
 
-{% block head %}
 		<meta charset="UTF-8"> 
 		<title>Dinomight!</title>
-{% endblock %}
 </head>
 
 <body>
 <nav>
-	<section id="container">
-		<li><button onmouseover="dinoFunction()" class="dropbtn"><h1>Dinosaurs</h1></button>
-		<div id="Dinosaurs" class="dropdown-content" class="toggleable">
+
+	<div id="container">
+		<div class="dropdown">
+		<button id="dinosaurs" class="dropbtn">Dinosaurs</button>
+		<div id="Dinosaurs" class="dropdown-content">
 			<a>Dinos!</a>
 			<a>Dinosaurs!</a>
 			</div>
-		</li>
-		<li><button onmouseover="timeFunction()" class="dropbtn2"><h2>Time Period</h2></button>
-			<div id="Timeperiod" class="dropdown-content2" class="toggleable">
+		</div>
+		<div class="dropdown"><button id="timeperiod" class="dropbtn2">Time Period</button>
+			<div id="Timeperiod" class="dropdown-content2">
 				<a>Triassic</a>
 				<a>Jurassic</a>
 				<a>Cretaceous</a>
-			</div>
-		</li>
-		<li><button onmouseover="placeFunction()" class="dropbtn3"><h2>Place</h2></button>
-			<div id="Place" class="dropdown-content3" class="toggleable">
-				<a><em>Pangea</em></a>
+			</div></div>
+		<div class="dropdown"><button id="place" class="dropbtn3">Place</button>
+			<div id="Place" class="dropdown-content3">
+				<a>Pangea</a>
 				<a>other</a>
 			</div>
-		</li>
-	</section>
-</nav>
-	<div class="container">
-	<div class="age1">
-		<div class="triassic">Triassic</div>
 		</div>
-	<div class="age2">
-		<div class="jurassic">Jurassic</div>
-		</div>
-	<div class="age3">
-		<div class="cretaceous">Cretaceous</div>
-		</div>
-	</div>
 
+</nav>
+<!--
+	<div class="container">
+	<button class="age1">Triassic
+		</button>
+	<button class="age2">Jurassic
+		</button>
+	<button class="age3">Cretaceous
+		</button>
+	</div>
 <div id="content">
-{% block content %} {% endblock %}
 </div>
+-->
 
 </body>
 </html>
