@@ -58,13 +58,11 @@ window.onload=function drops() {
 
 
 
-window.onclick = function(event) {
+window.onclick =function(event) {
   if (!event.target.matches('.dropbtn')) {
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
-    var dropdowns2 = document.getElementsByClassName("dropdown-content2");
-    var dropdowns3 = document.getElementsByClassName("dropdown-content3");
-    
+
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -72,13 +70,25 @@ window.onclick = function(event) {
         openDropdown.classList.remove('show');
       }}
 
-    var j;
-    for (j = 0; j < dropdowns2.length; j++) {
-      var openDropdown2 = dropdowns2[j];
+	}
+
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+    
+    var k;
+    for (k = 0; k < dropdowns2.length; k++) {
+      var openDropdown2 = dropdowns2[k];
       if (openDropdown2.classList.contains('show')) {
         openDropdown2.classList.remove('show');
-      }
-  }
+      }}
+
+	}
+
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns3 = document.getElementsByClassName("dropdown-content3");
+    
     var k;
     for (k = 0; k < dropdowns3.length; k++) {
       var openDropdown3 = dropdowns3[k];
@@ -89,6 +99,8 @@ window.onclick = function(event) {
 	}
 
 }
+
+
 };
 
 
