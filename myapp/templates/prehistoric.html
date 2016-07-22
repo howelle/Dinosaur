@@ -1,12 +1,32 @@
-{% extends "mantel.html" %}
-{% block head %}
-	<meta charset="UTF-8">
-	<title>Dinoland!</title>
-{% endblock %}
+{% extends "main.html" %}
 {% block content %}
-<div class="container">
-	<div class="card card container">
-		
+<div class="announced">Pick a Dinosaur!</div>
+<div class="headings">
+	<div class="heading">One amazing dino</div>
+	<div class="heading">One amazing dino</div>
+	<div class="heading">One amazing dino</div>
+	<div class="heading">One amazing dino</div>
+</div>	
+<br/>
+<div class="hush"></div>
+<div class="dino-images">
+	<div class="card card-container">
+	<img id="profile-img1" class="profile-img-card" src="/static/css/imgs/dinosilhouette.png" />
 	</div>
+
+	<div class="card card-container">
+	<img id="profile-img2" class="profile-img-card" src="/static/css/imgs/dinosilhouette.png" /></div>
+
+
+	<div class="card card-container">
+	<img id="profile-img3" class="profile-img-card" src="/static/css/imgs/dinosilhouette.png" /></div>
+
+
+	<div class="card card-container">
+	<img id="profile-img4" class="profile-img-card" src="/static/css/imgs/dinosilhouette.png" /></div>
+
 </div>
+
+<div class="description" onclick="myFunction()"><p>This is a thing about dinosaurs that will go on and on and on lalalalalalal dinosaurs <span class="words">dinosaurs dinosaurs dinosaurs</span> dinosaurs okay okay more paragraph dinosaurs dinosaurs dinosaurs</p></div>
+<br/>
 {% endblock %}
