@@ -35,4 +35,19 @@ def prehistoric():
 # Mainpage of the site
 @app.route('/')
 def main():
+    return render_template('main.html')
+
+
+@app.route('/dinoFam')
+def dinoFam():
     return render_template('prehistoric.html')
+
+@app.route('/pangea')
+def pangea():
+    return render_template('pangea.html')
+
+
+
+
+
+

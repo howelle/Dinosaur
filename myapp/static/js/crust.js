@@ -1,11 +1,11 @@
 window.onload=function drops() {
-	var dinosaur = document.getElementById('dinosaurs');
+	var dinosaur = document.getElementById('dinosaur');
 	var timeperiod = document.getElementById('timeperiod');
 	var place = document.getElementById('place');
 
 	var Dropdown1 = document.getElementById('Dinosaurs');
-	var Dropdown2 = document.getElementById('Timeperiod');
-	var Dropdown3 = document.getElementById('Place');
+	var Dropdown2 = document.getElementById('Timeperiods');
+	var Dropdown3 = document.getElementById('Places');
 
 
 	dinosaur.addEventListener("mouseenter", firstEnter);
@@ -26,6 +26,7 @@ window.onload=function drops() {
 		Dropdown3.classList.toggle("show")
 		ev.preventDefault()
 	}
+
 
 	Dropdown1.addEventListener("mouseleave", firstExit);
 	Dropdown2.addEventListener("mouseleave", secondExit);
@@ -49,6 +50,9 @@ window.onload=function drops() {
 		Dropdown3.classList.remove("show")
 
 	}
+
+
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
 
@@ -78,5 +82,8 @@ window.onclick = function(event) {
       }}
 
 	}
+
 }
 };
+
+
