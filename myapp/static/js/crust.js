@@ -12,6 +12,10 @@ window.onload=function drops() {
 	timeperiod.addEventListener("mouseenter", secondEnter);
 	place.addEventListener("mouseenter", thirdEnter);
 
+	dinosaur.addEventListener("click", firstEnter);
+	timeperiod.addEventListener("click", secondEnter);
+	place.addEventListener("click", thirdEnter);
+
 	function firstEnter(ev) {
 		Dropdown1.classList.toggle("show")
 		ev.preventDefault()
@@ -31,6 +35,7 @@ window.onload=function drops() {
 	Dropdown1.addEventListener("mouseleave", firstExit);
 	Dropdown2.addEventListener("mouseleave", secondExit);
 	Dropdown3.addEventListener("mouseleave", thirdExit);
+
 
 	function firstExit(ev) {
 		ev.preventDefault()

@@ -306,49 +306,67 @@ nav div div a {
 }
 
 .announced {
-	font-size:24px;
-	opacity: 0.9;
+	/* Positioning*/
 	display:inline-block;
-	margin-top:3%;
-	margin-right:3%;
 	width:70%;
-	padding:20px;
-	background-color: #000000;
-	font-family: "Courier New";
-	color: #FFFFFF;
-    border-radius: 5px;
-    text-align: center;
-  	overflow-wrap: break-word;
-  	word-wrap: break-word;
-  	margin-left:15%;
   	position: relative;
   	z-index: -2;
-
+  	margin-left:15%;
+	margin-top:3%;
+	margin-right:3%;
+	padding:20px;
+	/* Text */
+    text-align: center;
+	font-size:24px;
+	font-family: "Courier New";
+	color: #FFFFFF;
+	/* Decor */
+	opacity: 0.9;
+    border-radius: 5px;
+	background-color: #000000;
+	/* Behavior*/
+  	overflow-wrap: break-word;
+  	word-wrap: break-word;
 }
 
 #pangea {
-	width:30%;
-	height:30%;
-	margin-top: 2%;
-	margin-left:0%;
-	margin-right:0%;
+	/* Positioning*/
+	width:80%;
+	height:80%;
 	position: relative;
 	z-index: -10;
+	margin-top: 10%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom: 10%;
+	/* Decor */
+
 }
-
-
 
 .hush {
 	/* Positioning*/
-
+	width:40%;
+	position:relative;
+	z-index: -10;
+	padding:20px;
+	margin-top:2%;
+	margin-left: 15%;
 	/* Text */
-
+	font-family:palatino;
+	font-size:150%;
+	text-align: center;
 	/* Decor */
-
+    border-radius: 20px;
+	background-color: rgba(255,255,255,1);
 	/* Behavior*/
 
 
 }
+	/* Positioning*/
 
+	/* Text */
+	/* Decor */
+
+	/* Behavior*/
 
 
