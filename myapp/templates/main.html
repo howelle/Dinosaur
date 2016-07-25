@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- link the css stylesheet -->
+
+	<!-- some stylesheets from bootstrap and jquery-->
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-select.css">
+    <link rel="stylesheet" href="/static/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+    <link href="/static/css/font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="static/css/crust.css">
+	<script src="/static/js/jquery-2.2.4.min.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/bootstrap-select.js"></script>
+    <script src="/static/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="/static/js/sorttable.js"></script>
+	<script src="/static/js/crust.js"></script>
+	<script src="/static/js/mantle.js"></script>
+
+		<meta charset="UTF-8"> 
+		<title>Dinomight!</title>
+</head>
+
+<body>
+<nav>
+
+	<div id="container">
+		<div class="dropdown">
+		<button id="dinosaur" class="dropbtn" onclick="drop1()">Dinosaurs</button>
+		<div id="Dinosaurs" class="dropdown-content">
+			<a href="/dinoFam">Families of Dinosaurs</a><br/>
+			<a>Famous Dinosaurs</a><br/>
+			<a>Faux Dinosaurs</a><br/>
+			</div>
+		</div>
+		<div class="dropdown"><button id="timeperiod" class="dropbtn2" onclick="drop1()">Time Period</button>
+			<div id="Timeperiods" class="dropdown-content2">
+				<a>Triassic</a><br/>
+				<a>Jurassic</a><br/>
+				<a>Cretaceous</a><br/>
+			</div></div>
+		<div class="dropdown"><button id="place" class="dropbtn3">Place</button>
+			<div id="Places" class="dropdown-content3">
+				<a href="/pangea">Pangea</a><br/>
+				<a>Oceans</a><br/>
+			</div>
+		</div>
+
+</nav>
+<hr/>
+<div class="layered">
+{% block content %}{% endblock %}
+</div>
+
+<hr class="footer-line"/>
+<footer>
+<div class="footer-info">Dinosaurs brought to you by prehistoric peace<div>
+</footer>
+
+</body>
+</html>
